@@ -8,7 +8,12 @@
 body{
     font-family:Raleway;
 }
-
+h2{
+    font-size: 22px;
+}
+h1 h2 h3{
+    font-weight: bold;
+}
 /* HEADER*/
 
 header{
@@ -78,13 +83,10 @@ input::placeholder{
     height: 40px;
 }
 
-
-
-
-
 /* FILTRES */
 .Filtres{
     display: flex;
+    flex-direction: row;
     gap: 15px;
     font-weight: bold;
     margin-top: 30px;
@@ -113,4 +115,31 @@ input::placeholder{
 .logo-info{
     gap: 10px;
     padding-right: 10px;
+}
+
+/* SECTION HEBERGEMENTS */
+.hébergements-marseille{
+    margin-top: 30px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    width: 871px;
+    
+    display: grid;
+}
+.hebergements-marseille h2{
+    height: 26px;
+}
+.card1{
+
+}
+.fa-star{
+    color:#0065FC;
+}
+
+
+/* ASIDE-PLUS POPULAIRES */
+.populaires{
+    background-color: #F2F2F2;
+    width: 429px;
+    height: 614px;
 }
