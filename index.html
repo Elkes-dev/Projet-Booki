@@ -7,18 +7,59 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Limelight&family=Lobster&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+<body>
     <header>
-        <h1><img src="/Projet2/Logo.png" alt=""></h1>
+        <img src="Logo.png" alt="logo du site" class="logo">
         <nav>
-            <ul>
-                <li><a href="#..." >Hébergements</a></li>
-                <li><a href="#...">Activités</a></li>
+            <ul class="menu-principal">
+                <li><a href="#Section-Hébergement" >Hébergements</a></li>
+                <li><a href="#Section-Activités">Activités</a></li>
             </ul>
         </nav>
     </header>
-<body>
-    
+    <main> 
+        <section class="conteneur1">    
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1><br>
+                <p>En plein centre-ville ou en pleine nature</p>
+            <form action="" method="get">
+                <div class="search-bar">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="search" name="champ" class="search-input" placeholder="Marseille, France">
+                    <button type="submit" class="search-button">Rechercher</button>
+                </div>
+            </form>
+            <div class="Filtres">
+                <p>Filtres</p>
+                <div>
+                    <button type="button" class="eco">
+                        <i class="fa-solid fa-money-bill-wave"></i>Économique
+                    </button>
+                </div>
+                <div>
+                    <button type="button" class="familial">
+                        <i class="fa-solid fa-person"></i>Familial
+                    </button>
+                </div>
+                <div>
+                    <button type="button" class="romantique">
+                        <i class="fa-solid fa-heart"></i>Romantique
+                    </button>    
+                </div>
+                <div>
+                    <button type="button" class="pepites">
+                        <i class="fa-solid fa-fire"></i>Nos pépites
+                    </button>
+                </div>
+            </div>
+            <div class="categories">
+                <img src="circle-info.png" alt="logo-info" class="logo-info">
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
