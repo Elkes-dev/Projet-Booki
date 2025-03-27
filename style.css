@@ -45,13 +45,19 @@ ul{
 /* 1ERE SECTION */
 .conteneur1{
     padding-left: 20px;
+    height: 287px;
 }
-
+.conteneur1 p{
+    height: 19px;
+    font-size: 16px;
+}
 .search-bar{
     display: flex;
     align-items: center;
     border: 1px;
     margin-top: 30px;
+    height: 50px;
+    gap: 29px;
 }
 .fa-location-dot{
     background-color: #F2F2F2;
@@ -82,7 +88,9 @@ input::placeholder{
     cursor: pointer;
     height: 40px;
 }
-
+* {
+    outline: 1px solid red; /* Permet de voir s'il y a un élément qui bloque */
+}
 /* FILTRES */
 .Filtres{
     display: flex;
@@ -90,6 +98,12 @@ input::placeholder{
     gap: 15px;
     font-weight: bold;
     margin-top: 30px;
+}
+.Filtres p{
+    height: 21px;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-right: 10px;
 }
 .fa-heart,.fa-fire,.fa-person,.fa-money-bill-wave{
     color:#0065FC;
@@ -103,6 +117,7 @@ input::placeholder{
     font-weight: bold;
     padding:5px;
     padding: 8px;
+    height: 40px;
 }
 .eco:hover,.familial:hover,.romantique:hover,.pepites:hover{
     background-color: #deebff;
@@ -120,17 +135,39 @@ input::placeholder{
 /* SECTION HEBERGEMENTS */
 .hébergements-marseille{
     margin-top: 30px;
+    margin-left: 20px;
     background-color: #F2F2F2;
+    padding: 30px;
     border-radius: 15px;
     width: 871px;
-    
+    gap: 30px;
+}
+.cards{
     display: grid;
+    grid-template-columns: 250px 250px 250px;
+    gap: 30px;
+    padding-top: 30px;
 }
 .hebergements-marseille h2{
     height: 26px;
+    font-size: 22px;
 }
-.card1{
-
+.cardtext1,.cardtext2,.cardtext3,.cardtext4,.cardtext5,.cardtext6{
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 64px;
+}
+.cards p{
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+.cards h3{
+    padding-top: 8px;
+}
+.afficherplus{
+    font-size: 18px;
+    height: 21px;
+    margin-top: 40px;
 }
 .fa-star{
     color:#0065FC;
