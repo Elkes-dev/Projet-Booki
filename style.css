@@ -11,6 +11,9 @@ body{
 h2{
     font-size: 22px;
 }
+h3{
+    font-size: 16px;
+}
 h1 h2 h3{
     font-weight: bold;
 }
@@ -130,24 +133,33 @@ input::placeholder{
     padding-right: 10px;
 }
 
+
 /* SECTION HEBERGEMENTS */
+
+.Partie-hébergement{  /* GRID ENTRE HEBERGEMENT ET POPULAIRES*/
+    display: grid;
+    grid-template-columns: 871px 429px;
+    gap: 40px;
+    height: 614px;  
+} 
+
 .hébergements-marseille{
     margin-left: 20px;
     background-color: #F2F2F2;
     padding: 30px;
     border-radius: 15px;
     width: 871px;
+    display: grid;
     gap: 30px;
 }
 .cards-main1{
     display: flex;
     gap: 30px;
-    padding-top: 30px;
+    
 }
 .cards-main2{
     display: flex;
     gap: 30px;
-    padding-top: 30px;
 }
 .hebergements-marseille h2{
     height: 26px;
@@ -198,56 +210,67 @@ input::placeholder{
     display: flex;
     flex-wrap: wrap;
 }
+.en-tete-populaires{
+    display: flex;
+    justify-content: space-between;
+    width: 369px;
+    height: 26px;
+}
 .populaires h2{
     width: 300px;
     height: 26px;
 }
-.Partie-hébergement{
-    display: grid;
-    grid-template-columns: 871px 429px;
-    gap: 40px;
-    height: 614px;  
-}
 .cards-populaires{
     gap: 30px;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+.cards-populaires p{
+    font-size: 14px;
 }
 .stars-pops{
     color: #0065FC;
 }
 .pop1,.pop2,.pop3{
-    display: block;
     display: flex;
-    gap: 24px;
-    align-items: flex-start;
     width: 369px;
     height: 146px;
     border-radius: 20px;
     box-shadow: 0px 3px 15px 0px #0000001A;
+    gap: 24px;
+    flex-flow: column wrap;
+    background-color: #FFFF;
+    
 }
-.pop1 a,.pop2 a, .pop3 a{
-    text-decoration: none;
-    display: flex;
-    align-items: flex-start;
-    color: black;
+.cards-populaires img{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 5px 0 5px 5px;
+    margin-right: 0;
+    position: relative;
 }
-.poptext1,.poptext2{
+/*.poptext1,.poptext2, .poptext3{
     width: 246px;
     height: 146px;
     padding: 10px 5px 5px 15px;
     background-color: #FFFF;
     display: flex;
     flex-flow: row wrap;
-}
+}*/
 .poptext1, .poptext2, .poptext3{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 5px;
-}
-.pop1, .pop2, .pop3{
-    display: flex;
     flex-flow: column wrap;
-    justify-content: space-between;
+    gap: 5px;
+    height: 85px;
+    width: 226px;
+    padding-top: 5px;
+    margin-top: 5px;
+    margin-left:0;
+}
+.text-etoiles{
+    padding: 10px 5px 5px 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
 }
