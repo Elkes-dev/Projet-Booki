@@ -88,9 +88,7 @@ input::placeholder{
     cursor: pointer;
     height: 40px;
 }
-* {
-    outline: 1px solid red; /* Permet de voir s'il y a un élément qui bloque */
-}
+
 /* FILTRES */
 .Filtres{
     display: flex;
@@ -115,15 +113,15 @@ input::placeholder{
     border: 2px solid #F2F2F2;
     border-radius: 15px;
     font-weight: bold;
-    padding:5px;
-    padding: 8px;
+    padding: 10px;
     height: 40px;
 }
 .eco:hover,.familial:hover,.romantique:hover,.pepites:hover{
     background-color: #deebff;
 }
 .categories{
-    margin-top: 3cqi;
+    margin-top: 30px;
+    margin-bottom: 30px;
     display: flex;
 }
 
@@ -134,7 +132,6 @@ input::placeholder{
 
 /* SECTION HEBERGEMENTS */
 .hébergements-marseille{
-    margin-top: 30px;
     margin-left: 20px;
     background-color: #F2F2F2;
     padding: 30px;
@@ -142,9 +139,13 @@ input::placeholder{
     width: 871px;
     gap: 30px;
 }
-.cards{
-    display: grid;
-    grid-template-columns: 250px 250px 250px;
+.cards-main1{
+    display: flex;
+    gap: 30px;
+    padding-top: 30px;
+}
+.cards-main2{
+    display: flex;
     gap: 30px;
     padding-top: 30px;
 }
@@ -152,14 +153,31 @@ input::placeholder{
     height: 26px;
     font-size: 22px;
 }
+.card1,.card2,.card3,.card4,.card5,.card6{
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    padding-bottom: 15px;
+    gap: 4px;
+    border-radius: 20px;
+    background-color: #FFFF;
+}
 .cardtext1,.cardtext2,.cardtext3,.cardtext4,.cardtext5,.cardtext6{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 8px;
     padding-right: 15px;
     padding-left: 15px;
     height: 64px;
 }
+ a{
+    text-decoration: none;
+    color: black;
+}
 .cards p{
     padding-top: 8px;
     padding-bottom: 6px;
+}
+.cards-main1 .stars, .cards-main2 .stars{
+    color:#0065FC;
 }
 .cards h3{
     padding-top: 8px;
@@ -169,14 +187,67 @@ input::placeholder{
     height: 21px;
     margin-top: 40px;
 }
-.fa-star{
-    color:#0065FC;
-}
 
 
 /* ASIDE-PLUS POPULAIRES */
 .populaires{
     background-color: #F2F2F2;
-    width: 429px;
-    height: 614px;
+    border-radius: 15px;
+    gap: 30px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.populaires h2{
+    width: 300px;
+    height: 26px;
+}
+.Partie-hébergement{
+    display: grid;
+    grid-template-columns: 871px 429px;
+    gap: 40px;
+    height: 614px;  
+}
+.cards-populaires{
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.stars-pops{
+    color: #0065FC;
+}
+.pop1,.pop2,.pop3{
+    display: block;
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    width: 369px;
+    height: 146px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+}
+.pop1 a,.pop2 a, .pop3 a{
+    text-decoration: none;
+    display: flex;
+    align-items: flex-start;
+    color: black;
+}
+.poptext1,.poptext2{
+    width: 246px;
+    height: 146px;
+    padding: 10px 5px 5px 15px;
+    background-color: #FFFF;
+    display: flex;
+    flex-flow: row wrap;
+}
+.poptext1, .poptext2, .poptext3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.pop1, .pop2, .pop3{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
 }
