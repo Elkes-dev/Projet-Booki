@@ -205,7 +205,6 @@ input::placeholder{
 .populaires{
     background-color: #F2F2F2;
     border-radius: 15px;
-    gap: 30px;
     padding: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -238,7 +237,7 @@ input::placeholder{
     height: 146px;
     border-radius: 20px;
     box-shadow: 0px 3px 15px 0px #0000001A;
-    gap: 24px;
+    gap: 15px;
     flex-flow: column wrap;
     background-color: #FFFF;
     
@@ -250,14 +249,7 @@ input::placeholder{
     margin-right: 0;
     position: relative;
 }
-/*.poptext1,.poptext2, .poptext3{
-    width: 246px;
-    height: 146px;
-    padding: 10px 5px 5px 15px;
-    background-color: #FFFF;
-    display: flex;
-    flex-flow: row wrap;
-}*/
+
 .poptext1, .poptext2, .poptext3{
     display: flex;
     flex-flow: column wrap;
@@ -271,6 +263,66 @@ input::placeholder{
 .text-etoiles{
     padding: 10px 5px 5px 8px;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     gap: 24px;
+}
+
+/* ACTIVITEES A MARSEILLE */
+
+.Marseille-activities{
+    height: 560px;
+    width: 1340px;
+    margin-top: 50px;
+    padding: 30px;
+}
+.images-marseille{
+    width: 1280px;
+    height: 439px;
+    display: flex;
+    gap: 30px;
+    padding-top: 30px;
+}
+.images-marseille img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 380px;
+    width: 297px;
+}
+.images-marseille a{
+    padding: 20px19px 20px 19px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    gap: 10px;
+}
+.titre{
+    padding: 15px;
+}
+.vieux-port,.fort-pomegues,.calanques,.notre-dame{
+    border-radius: 20px;
+    height: 439px;
+    width: 297px;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #F2F2F2;
+    width: 1340px;
+}
+footer nav{
+    display: flex;
+}
+footer nav div{
+    padding: 20px;
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 444px;
+}
+footer nav div ul{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    
 }
