@@ -139,7 +139,7 @@ input::placeholder{
 
 .Partie-hébergement{  /* GRID ENTRE HEBERGEMENT ET POPULAIRES*/
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1fr; /* Avant de voir le css  j'ai fais 2fr et 1fr */
     max-width: 1340px;
     align-items:stretch;
     margin:0;
@@ -236,7 +236,6 @@ article .stars{
 .cards-populaires article img{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    border: 5px 0 5px 5px;
 }
 .pop .poptext{
     padding: 5px;
@@ -309,4 +308,86 @@ footer nav ul{
 }
 footer h3{
     padding-bottom: 10px;
+}
+
+/****** MEDIA QUERIES******/
+
+@media (max-width:1024px){
+    .Partie-hébergement{
+        display:flex;
+        flex-direction: column;
+        max-width: 1024px;
+    }
+    .hébergements-marseille{
+        width: 95%;
+    }
+    .populaires{
+        margin-top: 20px;
+        width: 95%;
+    }
+    .en-tete-populaires{
+        width: 100%;
+    }
+    .cards-populaires{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        width: 100%;
+    }
+    .cards-populaires img{
+        max-width: 30%;
+    }
+    .cards-populaires a{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .pop .poptext{
+        padding-bottom: 25px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    .images-marseille{
+        max-width: 1024;
+    }
+    .images-marseille img{
+        width: 100%;
+        
+        object-fit: cover;
+    }
+    .images-marseille .titre{
+        padding: 15px 20px 15px 15px;
+        text-align: justify;
+    }
+    .images-marseille article{
+        height: 100%;
+    }
+    .images-marseille a{
+        display: block;
+        align-items: center;
+        width: 20%;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:767.98px){
+    body{
+        max-width: 767.98px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .Partie-hébergement{
+        display: flex;
+        flex-direction: column;
+    }
 }
