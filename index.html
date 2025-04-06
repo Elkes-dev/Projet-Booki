@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=320, initial-scale=1.0">
     <title>Booki</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,8 +16,8 @@
         <img src="images/Logo.png" alt="logo du site" class="logo">
         <nav>
             <ul class="menu-principal">
-                <li><a href="#Section-Hébergement" >Hébergements</a></li>
-                <li><a href="#Section-Activités">Activités</a></li>
+                <li class="menu-gauche"><a href="#Section-Hébergement" >Hébergements</a></li>
+                <li class="menu-droite"><a href="#Section-Activités">Activités</a></li>
             </ul>
         </nav>
     </header>
@@ -29,11 +29,14 @@
                 <div class="search-bar">
                     <i class="fa-solid fa-location-dot"></i>
                     <input type="search" name="champ" class="search-input" placeholder="Marseille, France">
-                    <button type="submit" class="search-button">Rechercher</button>
+                    <button type="submit" class="search-button"><span class="search-text">Rechercher</span>
+                    <i class="fas fa-search"></i>
+                </button>
                 </div>
             </form>
             <div class="Filtres">
                 <p>Filtres</p>
+             <div class="buttons-filtre">
                 <div>
                     <button type="button" class="eco">
                         <i class="fa-solid fa-money-bill-wave"></i>Économique
@@ -54,6 +57,7 @@
                         <i class="fa-solid fa-fire"></i>Nos pépites
                     </button>
                 </div>
+             </div>  
             </div>
             <div class="categories">
                 <img src="images/circle-info.png" alt="logo-info" class="logo-info">
