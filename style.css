@@ -105,7 +105,6 @@ input::placeholder{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 15px;
     font-weight: bold;
     margin-top: 30px;
 }
@@ -116,7 +115,10 @@ input::placeholder{
 }
 .buttons-filtre{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+.buttons-filtre div{
+    padding: 5px;
 }
 .fa-heart,.fa-fire,.fa-person,.fa-money-bill-wave{
     color:#0065FC;
@@ -326,7 +328,10 @@ footer h3{
     .conteneur1 form .search-bar .fa-search{
         display: none;
     }
-    
+    .categories img{
+        padding-top: 5px;
+        object-fit: contain;
+    }
     .Partie-hébergement{
         display:flex;
         flex-direction: column;
@@ -491,10 +496,6 @@ footer h3{
         padding: 0;
         box-sizing: border-box;
     }
-    body{
-        max-width: 100%;
-        
-    }
     header{
         display: flex;
         flex-direction: column;
@@ -504,10 +505,6 @@ footer h3{
     header .menu-principal{
         padding-bottom: 20px;
         border-bottom: 2px solid #deebff;
-    }
-
-    .conteneur1 form{
-        width: 100%;
     }
     .conteneur1 .search-input{
         width: 100%;
@@ -522,7 +519,6 @@ footer h3{
         display: flex;
         flex-flow:column wrap;
         align-items: flex-start;
-
     }
     .Filtres .buttons-filtre div{
         width: 50%;
@@ -538,6 +534,7 @@ footer h3{
     }
     .categories .logo-info{
         object-fit: contain;
+        padding-top:15px;
     }
     .Partie-hébergement{
         max-width: 100%;
@@ -588,6 +585,7 @@ footer h3{
     .images-marseille a{
         margin-left: 10px;
         width: 100%;
+        padding-bottom: 25px;
     }
     .images-marseille a img{
         height: 150px;
@@ -602,6 +600,7 @@ footer h3{
         max-width: 100%;
         width: 100%;
         margin: 0;
+        
     }
     footer nav{
         display: flex;
