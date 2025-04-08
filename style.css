@@ -5,12 +5,11 @@
     box-sizing: border-box;
 }
 body{
-    min-width: 320px;
-    max-width: 1440px;
     font-family:Raleway;
 }
 main{
-    max-width: 1340px;
+    margin: auto;
+    max-width: 1440px;
 }
 h2{
     font-size: 22px;
@@ -30,8 +29,10 @@ header{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 1340px;
+    max-width: 1440px;
     padding-bottom: 30px;
+    margin: auto;
+    width: 100%;
 }
 nav ul li a{
     text-decoration: none;
@@ -44,10 +45,9 @@ header ul{
     flex-direction: row;
     gap: 68px;
     list-style-type: none;
-    padding: 0 50px 0 50px;
 }
 .logo{
-    padding: 20px 10px 20px 20px;
+    object-fit: contain;
 }
 .menu-principal li{
     padding-top: 15px;
@@ -57,9 +57,7 @@ header ul{
 }
 
 /* 1ERE SECTION */
-.conteneur1{
-    padding-left: 20px;
-}
+
 .conteneur1 p{
     font-size: 16px;
     padding-top: 8px;
@@ -152,26 +150,26 @@ input::placeholder{
 .Partie-hébergement{  /* GRID ENTRE HEBERGEMENT ET POPULAIRES*/
     display: grid;
     grid-template-columns: 2fr 1fr; /* Avant de voir le css  j'ai fais 2fr et 1fr */
-    max-width: 1340px;
+    max-width: 1440px;
     align-items:stretch;
     margin:0;
+    column-gap: 30px;
 } 
 
 .hébergements-marseille{
-    margin-left: 20px;
     background-color: #F2F2F2;
-    padding: 30px;
     border-radius: 15px;
-    max-width: 1340px;
+    padding: 30px;
+    width: 100%;
 }
 .hebergements-marseille h2{
     font-size: 22px;
 }
 .cards{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 30px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    row-gap: 30px;
     padding-top: 30px;
 }
 .cards img{
@@ -182,7 +180,7 @@ input::placeholder{
     padding-bottom: 15px;
     border-radius: 20px;
     background-color: #FFFF;
-
+    height: 100%;
 }
 .cardtext{
     display: flex;
@@ -211,17 +209,17 @@ article .stars{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    max-width: 1340px;
+    max-width: 1440px;
+    height: 100%;
     padding: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin: auto;
 }
 
 
 .en-tete-populaires{
     display: flex;
     justify-content: space-between;
-    width: 369px;
+    width: 100%;
 }
 
 .cards-populaires p{
@@ -265,7 +263,7 @@ article .stars{
 
 .Marseille-activities{
     margin:0;
-    max-width: 1340px;
+    max-width: 1440px;
 }
 .Marseille-activities h2{
     padding: 50px;
@@ -277,8 +275,7 @@ article .stars{
 .images-marseille img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    max-width: 100%;
-    height: auto;
+    
 }
 .images-marseille a{
     display: flex;
@@ -300,13 +297,14 @@ article .stars{
 
 footer{
     background-color: #F2F2F2;
-    max-width: 1340px;
-    margin: 50px 30px 0 30px;
-    padding: 20px;
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 50px;
 }
 footer nav{
     display: flex;
     justify-content: space-between;
+    padding: 20px;
 }
 footer nav div{
     flex:1;
@@ -365,13 +363,8 @@ footer h3{
     .pop .poptext{
         padding-bottom: 25px;
     }
-    h3{
-        font-size: 16px;
-    }
-    
     .images-marseille img{
         max-width: 100%;
-        
         object-fit: cover;
     }
     .images-marseille .titre{
@@ -583,12 +576,11 @@ footer h3{
         padding: 0;
     }
     .images-marseille a{
-        margin-left: 10px;
         width: 100%;
         padding-bottom: 25px;
     }
     .images-marseille a img{
-        height: 150px;
+        aspect-ratio: 2/1;
         width: 100%;
         object-fit: cover;
     }
