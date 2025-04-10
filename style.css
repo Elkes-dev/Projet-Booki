@@ -373,7 +373,6 @@ footer h3{
         padding-bottom: 25px;
     }
     .images-marseille img{
-        
         object-fit: cover;
         height: 200px;
     }
@@ -419,10 +418,12 @@ footer h3{
     header .menu-gauche{
         border-top: none;
         border-bottom: 2px solid #deebff;
+        padding-bottom: 20px;
     }
     header .menu-droite{
         border-top: none;
         border-bottom: 2px solid #deebff;
+        padding-bottom: 20px;
     }
     .menu-gauche:hover{
         border-bottom: 2px solid #0065FC;
@@ -446,6 +447,7 @@ footer h3{
         display: flex;
         flex-flow:column wrap;
         align-items: flex-start;
+        row-gap: 0;
     }
     .Filtres .buttons-filtre div{
         width: 50%;
@@ -478,9 +480,7 @@ footer h3{
     .populaires img{
         width: 30%;
     }
-    .pop .poptext{
-        
-    }
+
     .populaires .text-etoiles{
         padding: 0;
         padding:10px;
