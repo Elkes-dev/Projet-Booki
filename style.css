@@ -82,6 +82,8 @@ header ul{
 }
 .search-input{
     border: none;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
     padding: 10px 0 10px 0;
 }
 input::placeholder{
@@ -166,6 +168,10 @@ input::placeholder{
     padding: 0 20px;
 } 
 
+.fa-star:last-child{
+    color: #deebff;
+}
+
 .hébergements-marseille{
     background-color: #F2F2F2;
     border-radius: 15px;
@@ -184,6 +190,10 @@ input::placeholder{
 }
 .cards img{
     width: 100%;
+    height: 100px;
+    padding: 5px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     object-fit: cover;
 }
 .card{
@@ -208,7 +218,7 @@ article .stars{
 }
 .afficherplus{
     font-size: 18px;
-    margin-top: 40px;
+    margin-top: 50px;
     font-weight: bold;
 }
 
@@ -236,6 +246,7 @@ article .stars{
         flex-direction: column;
         justify-content: space-around;
         row-gap: 30px;
+        padding-top: 20px;
 }
 .cards-populaires p{
     font-size: 14px;
@@ -257,6 +268,9 @@ article .stars{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     object-fit: cover;
+    height: 150px;
+    width: 30%;
+    padding: 5px;
 }
 .pop .poptext{
     padding: 5px;
@@ -288,7 +302,7 @@ article .stars{
 .images-marseille img{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    height: 350px;
+    height: 400px;
     width: 100%;
     object-fit: cover;
 }
@@ -297,6 +311,7 @@ article .stars{
     flex-direction: column;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+    width: 100%;
 }
 .titre{
     padding: 15px;
