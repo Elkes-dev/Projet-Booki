@@ -10,7 +10,7 @@ body{
 main{
     margin: auto;
     max-width: 1440px;
-    padding-top: 30px;
+    margin-top: 30px;
 }
 h2{
     font-size: 22px;
@@ -437,6 +437,7 @@ footer h3{
     }
     header nav{
         width: 100%;
+        padding-top: 30px;
     }
     .menu-principal{
         gap: 0;
@@ -485,11 +486,19 @@ footer h3{
     }
     .Filtres .buttons-filtre button{
         width: 100%;
+        height: 100%;
+        display: flex;
+        padding: 14px;
+        align-items: center;
     }
     .buttons-filtre{
        width: 100%;
        display: flex;
        flex-wrap:wrap ;
+       padding-top: 15px;
+    }
+    .infos{
+        margin-bottom: 0;
     }
     .categories .logo-info{
         object-fit: contain;
@@ -534,11 +543,13 @@ footer h3{
     }
     .Marseille-activities{
         width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
     .images-marseille{
         display: flex;
         flex-direction: column;
-        padding: 20px;
+        padding: 30px;
     }
     .images-marseille a{
         width: 100%;
